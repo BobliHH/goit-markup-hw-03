@@ -6,6 +6,13 @@
     --text-on-dark-bg:rgba(255, 255, 255, 0.6);
     --button-background: #F5F4FA;
 }
+*{
+margin-block-start: 0;
+margin-block-end: 0;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 0px;
+}
 
 body{
     color: #212121;
@@ -32,14 +39,32 @@ body{
 
 .page-header{
     background-color: var(--white-color);
+    display: flex;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+.main-nav-list{
+    list-style-type: none;
+    
+}
+
+.main-nav-item{
+    display: inline-block;  
+    padding: 32px 50px 32px 0px;
 }
 
 .logo{
     font-family: 'Raleway';
-    color: black;
     font-weight:700;
     font-size: 26px;
     line-height: 1.19;
+}
+.header-logo{
+    color: black;
+    padding: 24px 93px 25px 0;
 }
 
 .logo-web{
@@ -58,6 +83,15 @@ body{
     color: var(--highlight-color);
 }
 
+.contact-list{
+margin-left: auto;
+list-style-type: none;
+}
+
+.contact-list-item{
+    display: inline-block;
+    padding: 32px;
+}
 .contact-nav-link{
     color:var(--text-color);
     font-weight:500;
@@ -75,10 +109,8 @@ body{
 
 .hero-section{
     background-color: var(--dark-bg);
-    width: 100%;
     height: 600px;
-    left: 0px;
-    top: 80px;
+    padding-top: 200px;
 }
 
 .hero-title{
@@ -89,72 +121,151 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
+    margin-bottom: 30px;
 }
 
 .request-button{
     color:var(--white-color);
     background-color: var(--highlight-color);
     border: 1px solid var(--highlight-color);
+    margin: 10px 20px; 
+    /* added margin so the button does not change dimensions when hovering because of the padding */
     cursor: pointer;
     font-weight:700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
+    border-radius: 4px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;  
+    /* border: 3px solid green; */
 }
 
 .request-button:hover,
 .request-button:active,
 .request-button:focus{
     background-color: #188CE8;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.section{
+    margin-bottom: 94px;
+}
+
+.skills-section{
+    border: 7px solid red;
+}
+
+.what-we-do-section{
+    border: 7px solid red;
+}
+
+.our-team-section{
+    background-color: var(--button-background);
+    border: 7px solid red;
+}
+
+
+.skills-list{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.skills-list-item{
+    flex-basis: 270px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .skills-subtitle{
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .skills-text{
     color: var(--text-color);
 }
 
-.title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+.what-we-do-list{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 
-.out-team-subtitle{
+.what-we-do-list-item{
+    flex-basis: 270px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.our-team-title{
+    padding-top: 94px;
+}
+
+.our-team-list{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.our-team-list-item{
+    background-color: #ffffff;
+    flex-basis: 270px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.our-team-subtitle{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
 }
 
 .our-team-text {
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 /* Footer Styling */
 
 .footer-section{
     background-color: var(--dark-bg);
-    width: 100%;
-    height: 251px;
-    left: 0px;
-    top: 2097px;
+    padding: 60px 0;
+}
+
+.footer-logo{
+    color: var(--white-color);
+}
+
+.maps{
+    padding-top: 28px;
+}
+
+.footer-contact-list-item{
+    padding-bottom: 12px;    
 }
 
 .maps-link{
@@ -197,6 +308,10 @@ body{
     color: var(--white-color);
     background-color: var(--highlight-color);
     cursor: pointer;
+}
+
+.filter-section{
+    display: flex;
 }
 
 .portololio-item-name{
