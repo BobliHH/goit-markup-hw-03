@@ -15,6 +15,10 @@
   padding-inline-start: 0px;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 body {
   color: #212121;
   font-family: "Roboto", sans-serif;
@@ -74,6 +78,8 @@ body {
 }
 
 .main-nav-link {
+  color: #212121;
+  /* added color because without it nav buttons are purple ( this is body collor) */
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -334,7 +340,7 @@ body {
 }
 
 .portofolio-list-item {
-  line-height: 0;
+  /* line-height: 0; */
   flex-basis: 370px;
   flex-grow: 0;
   flex-shrink: 1;
