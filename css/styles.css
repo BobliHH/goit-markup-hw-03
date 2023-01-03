@@ -100,6 +100,12 @@ body {
   list-style-type: none;
 }
 
+.header-contact-list{
+    display: flex;
+    gap: 40px;
+}
+
+
 .contact-list-item {
   display: inline-block;
   padding: 32px 0;
