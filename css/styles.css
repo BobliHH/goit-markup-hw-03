@@ -173,10 +173,10 @@ body {
     border: 7px solid red;
 } */
 
-/* .our-team-section{
-    background-color: var(--button-background);
-    border: 7px solid red;
-} */
+.our-team-section {
+  background-color: var(--button-background);
+  /* border: 7px solid red; */
+}
 
 .skills-list {
   display: flex;
