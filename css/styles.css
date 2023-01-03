@@ -50,11 +50,12 @@ body {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
-.main-nav-list {
+/* .main-nav-list {
   list-style-type: none;
-}
+} */
 
 .main-nav-item {
   display: inline-block;
@@ -98,7 +99,7 @@ body {
 
 .contact-list-item {
   display: inline-block;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .contact-nav-link {
@@ -185,7 +186,7 @@ body {
 }
 
 .skills-list-item {
-  flex-basis: 270px;
+  /* flex-basis: 270px; */
   flex-grow: 0;
   flex-shrink: 1;
 }
