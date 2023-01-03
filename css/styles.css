@@ -44,12 +44,15 @@ body {
 
 .page-header {
   background-color: var(--white-color);
-  display: flex;
   border-bottom: solid 1px #ececec;
 }
 
+.page-header > .container {
+  display: flex;
+}
+
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -119,8 +122,8 @@ body {
 
 .hero-section {
   background-color: var(--dark-bg);
-  height: 600px;
-  padding-top: 200px;
+  padding: 200px 0;
+  /* border: 7px solid red; */
 }
 
 .hero-title {
@@ -146,6 +149,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  padding: 0;
 }
 
 .center {
@@ -166,13 +170,14 @@ body {
   margin-bottom: 94px;
 }
 
-/* .skills-section{
-    border: 7px solid red;
-} */
+.skills-section {
+  margin-top: 94px;
+  /* border: 7px solid red; */
+}
 
-/* .what-we-do-section{
-    border: 7px solid red;
-} */
+.what-we-do-section {
+  /* border: 7px solid red; */
+}
 
 .our-team-section {
   background-color: var(--button-background);
@@ -303,11 +308,12 @@ body {
 .filter-button {
   background-color: var(--button-background);
   border: 1px solid var(--button-background);
+  text-align: center;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -318,9 +324,10 @@ body {
   cursor: pointer;
 }
 
-/* .filter-section{
-    border: 7px solid red;
-} */
+.filter-section {
+  padding-top: 94px;
+  /* border: 7px solid red; */
+}
 
 .filter-button-list {
   display: flex;
